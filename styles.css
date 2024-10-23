@@ -1,0 +1,479 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6b6b;
+}
+
+a:hover {
+    color: #ff4757;
+}
+
+/* Header styles */
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 a {
+    color: #ff6b6b;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero section */
+.hero-section {
+    background: url('images/bg1.avif') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    background-size: cover;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #ff4757;
+}
+
+/* Popular Destinations */
+.popular-destinations {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.popular-destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.destination p {
+    padding: 0 15px 20px;
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #ff6b6b;
+    margin: 0 5px;
+}
+
+.footer-content a:hover {
+    color: #ff4757;
+}
+/* Video Background Section */
+.destination-video-bg {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Adds transparency to the text background */
+    border-radius: 10px;
+}
+
+.content-overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content-overlay p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Destination Page Styles */
+.destination-hero {
+    padding: 150px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.destination-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.destination-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.destination-list {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.destination-list h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.destination-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    flex: 1 1 40%;
+}
+
+.destination-info {
+    padding: 20px;
+    flex: 1 1 60%;
+}
+
+.destination-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.destination-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.destination-info a {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.destination-info a:hover {
+    background-color: #ff4757;
+}
+/* About Intro Section */
+.about-intro {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.mission-section p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Why Us Section */
+.why-us-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.why-us-section p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-box p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-form-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e55e5e;
+}
